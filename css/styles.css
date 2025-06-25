@@ -1,0 +1,80 @@
+
+:root {
+  --primary-color: #0078D4;
+  --background-light: #ffffff;
+  --background-dark: #1a1a1a;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.toggle-theme {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+  font-size: 14px;
+  display: none;
+  z-index: 1000;
+}
+
+.cookie-consent.show {
+  display: block;
+}
+
+.cookie-consent button {
+  margin-left: 1rem;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
